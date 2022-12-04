@@ -1,0 +1,44 @@
+footer {
+   width: 100%;
+   height: auto;
+}
+
+.footer {
+   &__div {
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+gap: 30px;
+      &_ul {
+         width: 173px;
+         margin: 0 auto;
+         &_list {
+
+            list-style-type: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: #5D5A6F;
+            line-height: 30px;
+
+            &--title {
+               font-weight: 600;
+               font-size: 18px;
+               line-height: 22px;
+               color: #0A033C;
+            }
+
+            &--img {
+               padding-top: 27px;
+            }
+
+            &--img1 {
+               padding-top: 10px;
+               padding-bottom: 10px;
+            }
+         }
+      }
+
+   }
+}

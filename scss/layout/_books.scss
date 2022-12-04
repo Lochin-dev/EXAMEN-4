@@ -1,0 +1,169 @@
+.books {
+
+   &__buk {
+      display: flex;
+      justify-content: space-around;
+
+      &_wrap {
+         width: 350px;
+
+         &-title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 30px;
+            color: #0A033C;
+
+         }
+
+         &-div {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 316px;
+            height: 122px;
+            left: 40px;
+            top: 450px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 7px;
+            gap: 10px;
+            margin: 50px auto;
+
+            &-ul {
+
+               &-li {
+
+                  &-text {
+                     font-weight: 600;
+                     font-size: 16px;
+                     line-height: 20px;
+                     color: #0A033C;
+                  }
+
+                  &-span {
+
+                     font-weight: 600;
+                     font-size: 16px;
+                     line-height: 16px;
+                     color: #FF6652;
+                  }
+               }
+            }
+         }
+      }
+
+
+      &_wrapp {
+         max-width: 900px;
+         text-align: center;
+
+         &-btns {
+            margin-top: 15px;
+            margin-right: 20px;
+            border: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #0A033C;
+            width: 152px;
+            height: 60px;
+            border-radius: 10px;
+
+            &:hover {
+               background: #FF6652;
+               box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+               border-radius: 10px;
+               color: #ffffff;
+            }
+
+            &:active {
+               border: 2px solid #FF6652;
+               background: #ffffff;
+               color: #0A033C;
+            }
+         }
+
+         &-form {
+            margin: 30px 0;
+
+            &-input {
+               border: none;
+               max-width: 555px;
+               height: 60px;
+               background: #FFFFFF;
+               border-radius: 10px;
+            }
+
+            &-sel {
+               width: 270px;
+               height: 60px;
+               background: #FFFFFF;
+               border-radius: 10px;
+            }
+
+         }
+
+         &-ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            &-li {
+               width: 270px;
+               margin: 0 auto;
+
+               &-text {
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 20px;
+                  color: #0A033C;
+               }
+
+               &-div {
+                  display: flex;
+                  justify-content: space-between;
+
+                  &-span {
+                     font-weight: 600;
+                     font-size: 18px;
+                     line-height: 20px;
+                     color: #FF6652;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+@media only screen and (max-width:1100px) {
+
+   .books__buk {
+      display: block;
+      text-align: center;
+   }
+
+   .books__buk_wrap {
+      display: flex;
+      width: auto;
+      justify-content: space-around;
+      margin-bottom: 40px;
+   }
+}
+
+@media only screen and (max-width:670px) {
+
+   .books__buk {
+      display: block;
+      text-align: center;
+   }
+
+   .books__buk_wrap {
+      display: block;
+      width: auto;
+      margin-bottom: 40px;
+   }
+}

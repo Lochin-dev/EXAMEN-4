@@ -1,0 +1,52 @@
+.shop {
+
+   &__wrap {
+      max-width: 1280px;
+      min-height: 270px;
+      background: #e4d6f8;
+      border-radius: 20px;
+
+      &_text {
+         padding: 15px;
+         
+      }
+
+      &_div {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+
+         &--title {
+            width: 300px;
+            height: 100px;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 50px;
+            color: #0A033C;
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:768px) {
+   .shop {
+
+      &__wrap {
+        
+   
+         &_div {
+            display: block;
+           text-align: center;
+            &--title {
+               text-align: center;
+               width: 300px;
+               height: 100px;
+               font-weight: 600;
+               font-size: 40px;
+               line-height: 50px;
+               color: #0A033C;
+            }
+         }
+      }
+   }
+}

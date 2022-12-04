@@ -1,0 +1,29 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  all: inherit;
+  font-family: 'Poppins', sans-serif;
+  background: #edeaf0;
+}
+
+img{
+   max-width: 100%;
+}
+
+ul{
+  list-style-type: none;
+
+}
+
+li{
+  padding: 0 auto;
+}
