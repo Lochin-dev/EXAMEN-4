@@ -31,6 +31,7 @@ const registration = (e) => {
        console.log(e);
         if (e.code === 1) {
           localStorage.setItem("token", e.data.token);
+          localStorage.setItem('user', e.data.username)
           alert(`${e.data.username} welcom to admin dashbard`);
           setTimeout(()=>{
             window.location.replace("./home.html");
@@ -55,12 +56,7 @@ $("#registration").addEventListener("submit", (e) => {
 
 
 
-
-
-
-
-
-let userName = document.querySelector("#email"),
+let userName = document.querySelector("#username"),
   passWord = document.querySelector("#password"),
   koz = document.querySelector(".koz");
 

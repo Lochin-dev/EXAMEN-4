@@ -1,4 +1,11 @@
 
 header{
    width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 3;
+   height: 100px;
+   background-color: rgb(211, 211, 211);
+   padding-top: 0;
+   display: block;
 }

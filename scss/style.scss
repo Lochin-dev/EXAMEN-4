@@ -1,3 +1,112 @@
 @import "./layout/all-iayouts";
 @import "./normalize";
 @import "./general";
+
+
+body{
+ 
+}
+
+.div {
+   position: absolute;
+   width: 216px;
+   height: 400px;
+   right: 0;
+   top: 0px;
+   border-radius: 7px;
+   background: #FFEDA9;
+   z-index: 4;
+   transform: translatex(400%);
+   -webkit-transform: translatex(400%);
+   -moz-transform: translatex(400%);
+   -ms-transform: translatex(400%);
+   -o-transform: translatex(400%);
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+   backdrop-filter: blur(8px);
+
+&__img{
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+   &__ul{
+      text-align: start;
+      &--list{
+         font-size: 15px;
+         font-weight: 700;
+         line-height: 70px;
+
+         &-link{
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+         }
+      }
+   }
+}
+
+
+.div_wrap{
+   position: absolute;
+   width: 216px;
+   height: 400px;
+   right: 0;
+   top: opx;
+   border-radius: 7px;
+   background: #FFEDA9;
+   z-index: 4;
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+   backdrop-filter: blur(8px);
+
+   
+   &__ul{
+      text-align: start;
+      &--list{
+         font-size: 15px;
+         font-weight: 700;
+         line-height: 70px;
+
+         &-link{
+            text-decoration: none;
+            color: rgb(78, 78, 78);
+         }
+      }
+   }
+}
+
+
+
+.listt{
+   display: none;
+}
+
+
+@media only screen and (max-width:576px) {
+   .listt{
+      display: block;
+   }
+   .div__ul--list{
+      line-height: 20px;
+   }
+   .ism{
+   display: block;
+   }
+}

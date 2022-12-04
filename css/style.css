@@ -34,6 +34,13 @@
 }
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 100px;
+  background-color: rgb(211, 211, 211);
+  padding-top: 0;
+  display: block;
 }
 
 .nav {
@@ -118,6 +125,9 @@ main {
   height: auto;
 }
 
+.intro {
+  padding-top: 70px;
+}
 .intro__wrapp {
   display: none;
 }
@@ -1325,6 +1335,9 @@ main {
     -o-border-radius: 10px 10px;
   }
 }
+.shop {
+  padding-top: 100px;
+}
 .shop__wrap {
   max-width: 1280px;
   min-height: 270px;
@@ -1736,4 +1749,98 @@ ul {
 
 li {
   padding: 0 auto;
+}
+
+.div {
+  position: absolute;
+  width: 216px;
+  height: 400px;
+  right: 0;
+  top: 0px;
+  border-radius: 7px;
+  background: #FFEDA9;
+  z-index: 4;
+  transform: translatex(400%);
+  -webkit-transform: translatex(400%);
+  -moz-transform: translatex(400%);
+  -ms-transform: translatex(400%);
+  -o-transform: translatex(400%);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  backdrop-filter: blur(8px);
+}
+.div__img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.div__ul {
+  text-align: start;
+}
+.div__ul--list {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.div__ul--list-link {
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+}
+
+.div_wrap {
+  position: absolute;
+  width: 216px;
+  height: 400px;
+  right: 0;
+  top: opx;
+  border-radius: 7px;
+  background: #FFEDA9;
+  z-index: 4;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  backdrop-filter: blur(8px);
+}
+.div_wrap__ul {
+  text-align: start;
+}
+.div_wrap__ul--list {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.div_wrap__ul--list-link {
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+}
+
+.listt {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .listt {
+    display: block;
+  }
+  .div__ul--list {
+    line-height: 20px;
+  }
+  .ism {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
