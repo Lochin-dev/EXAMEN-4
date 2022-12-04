@@ -1,3 +1,9 @@
+$("#logout").addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});
+
+
 (function () {
   let userName = localStorage.getItem("user");
   let token = localStorage.getItem("token");
@@ -7,10 +13,7 @@
   }
 })();
 
-$("#logout").addEventListener("click", () => {
-  localStorage.clear();
-  location.reload();
-});
+
 
 $(".ikonka").addEventListener("click", () => {
   $(".div").setAttribute("class", "div_wrap");

@@ -1053,9 +1053,8 @@ main {
   margin: 50px auto;
 }
 .books__buk_wrap-div-ul-li-text {
-  font-weight: 600;
+  font-weight: 0;
   font-size: 16px;
-  line-height: 20px;
   color: #0A033C;
 }
 .books__buk_wrap-div-ul-li-span {
