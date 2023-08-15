@@ -6,8 +6,13 @@ $("#logout").addEventListener("click", () => {
 
 (function () {
   let userName = localStorage.getItem("user");
-  let token = localStorage.getItem("token");
-  $("#userLogin").innerHTML = `${userName}`;
+  $("#userLogin").innerHTML = `${userName}`
+  console.log(userName);
+  if (userName === null) {
+    $("#userLogin").innerHTML = `Sign in`;
+  }
+
+  let token = localStorage.getItem("user");
   if (!token) {
     location.replace("./login.html");
   }

@@ -19,6 +19,14 @@ const registration = (e) => {
   ) {
     alert("MALUMOT TOLIQ EMAS ");
   } else {
+
+    localStorage.setItem("user", userName)
+
+    setTimeout(() => {
+      window.location.replace("./index.html");
+    }, 2000)
+
+
     fetch(`${baseURL}/sign-in`, {
       method: "POST",
       headers: {
@@ -28,12 +36,13 @@ const registration = (e) => {
     })
       .then((e) => e.json())
       .then((e) => {
-       console.log(e);
+        console.log(e);
         if (e.code === 1) {
+          console.log(e.data.token);
           localStorage.setItem("token", e.data.token);
           localStorage.setItem('user', e.data.username)
           alert(`${e.data.username} welcom to admin dashbard`);
-          setTimeout(()=>{
+          setTimeout(() => {
             window.location.replace("./home.html");
           }, 2000)
         } else {
@@ -46,6 +55,7 @@ const registration = (e) => {
 
 $("#registration").addEventListener("submit", (e) => {
   registration(e);
+
 });
 
 
